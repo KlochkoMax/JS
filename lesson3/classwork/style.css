@@ -1,0 +1,26 @@
+.bod {
+
+}
+
+.cont {
+    box-sizing: border-box;
+    border: gray solid 2px;
+    padding: 15px;
+}
+
+.product_main {
+    display: flex;
+}
+
+.product-card {
+    width: 25%;
+    height: 350px;
+    text-align: center;
+    border: 2px solid gold;
+
+}
+
+.product-card img {
+    width: 100%;
+    height: 80%;
+}
