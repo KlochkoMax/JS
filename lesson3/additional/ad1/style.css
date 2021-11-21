@@ -1,0 +1,15 @@
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post-card {
+    width: 18%;
+    border: solid 2px gray;
+    padding: 10px;
+}
+
+.post-card h3 {
+    border-bottom: darkgray solid 1px;
+}

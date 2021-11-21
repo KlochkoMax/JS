@@ -1,0 +1,17 @@
+.users-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.user-block {
+    width: 49%;
+    border: solid 2px #5e5e59;
+    padding-left: 5px;
+
+}
+
+.user-block h2 {
+    border-bottom: 1px solid black;
+    width: 55%;
+}
