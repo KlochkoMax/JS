@@ -91,11 +91,10 @@
     // document.write(insert_dash(str));
 
 // Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
-    let func = (str) => {
-        let toUpperclice = str.toUpperCase() + str.slice(0);
-        return toUpperclice;
-    }
-    let str ='javascript is cool'
-    document.write(func(str));
+//     let func = (str) => {
+//         return str[0].toUpperCase() + str.slice(1);
+//     }
+//     let str ='javascript is cool'
+//     document.write(func(str));
 
 
