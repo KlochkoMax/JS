@@ -1,0 +1,41 @@
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.main div {
+    padding: 5px;
+    margin: 1px;
+    border: solid royalblue 1px;
+}
+
+.ulModule {
+    padding: 5px;
+    margin: 1px;
+    border: solid royalblue 1px;
+}
+
+.blockHeader {
+    width: 100%;
+    text-decoration: underline;
+}
+
+.month {
+    width: 30%;
+}
+
+.hours {
+    width: 66%;
+}
+
+.bottom {
+    width: 100%;
+}
+
+.bottom h4 {
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
