@@ -18,6 +18,8 @@ let users = [
 
 
     let arrFavorites = [];
+    localStorage.setItem('Users', JSON.stringify(arrFavorites));
+
     for (const user of users) {
         let div1 = document.createElement('div');
 
@@ -33,9 +35,9 @@ let users = [
 
 
         btn.onclick = function () {
-            arrFavorites.push(user);
-            let newFavor = JSON.stringify(arrFavorites);
-            localStorage.setItem( 'Users' , newFavor );
+            let fav = JSON.parse(localStorage.getItem('Users'));
+            fav.push(user);
+            localStorage.setItem('Users', JSON.stringify(fav));
         }
 
         btn1.onclick = function () {
@@ -47,6 +49,4 @@ let users = [
         div1.appendChild(btn1);
         document.body.appendChild(div1);
     }
-
-    localStorage.clear()
 

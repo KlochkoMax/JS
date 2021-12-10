@@ -54,4 +54,3 @@
     //
     // form.append(inputModel, inputType, inputVolume, btn);
     // document.body.appendChild(form);
-    // localStorage.clear();
