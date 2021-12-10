@@ -17,9 +17,6 @@ let users = [
 // Створити сторніку favorites.html при переході на яку потрібно вивест в документ всіх обраних на попередньому етапі.
 
 
-    let arrFavorites = [];
-    localStorage.setItem('Users', JSON.stringify(arrFavorites));
-
     for (const user of users) {
         let div1 = document.createElement('div');
 
@@ -35,7 +32,7 @@ let users = [
 
 
         btn.onclick = function () {
-            let fav = JSON.parse(localStorage.getItem('Users'));
+            let fav = JSON.parse(localStorage.getItem('Users'))|| [];
             fav.push(user);
             localStorage.setItem('Users', JSON.stringify(fav));
         }

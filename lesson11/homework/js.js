@@ -31,26 +31,25 @@
 //     при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
 
 
-    // let form = document.createElement('form');
-    //
-    // let inputModel = document.createElement('input');
-    // inputModel.type = 'text';
-    // let inputType = document.createElement('input');
-    // inputType.type = 'text';
-    // let inputVolume = document.createElement('input');
-    // inputModel.Volume = 'number';
-    //
-    // let btn = document.createElement('button');
-    // btn.innerText = 'Send';
-    //
-    // btn.onclick = function (){
-    //     let array = [];
-    //     array.push(inputModel.value, inputType.value, inputVolume.value);
-    //     let newArray = JSON.stringify(array);
-    //     localStorage.setItem('KeyCar', newArray);
-    //
-    // }
-    //
-    //
-    // form.append(inputModel, inputType, inputVolume, btn);
-    // document.body.appendChild(form);
+    let form = document.createElement('form');
+
+    let inputModel = document.createElement('input');
+    inputModel.type = 'text';
+    let inputType = document.createElement('input');
+    inputType.type = 'text';
+    let inputVolume = document.createElement('input');
+    inputModel.Volume = 'number';
+
+    let btn = document.createElement('button');
+    btn.innerText = 'Send';
+
+    btn.onclick = function (){
+        let array = JSON.parse(localStorage.getItem('Cars')) || [];
+        array.push(inputModel.value, inputType.value, inputVolume.value);
+        localStorage.setItem( 'Cars', JSON.stringify(array));
+
+    }
+
+
+    form.append(inputModel, inputType, inputVolume, btn);
+    document.body.appendChild(form);
