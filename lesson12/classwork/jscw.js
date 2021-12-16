@@ -35,7 +35,6 @@
                         .then(comments => comments.json())
                         .then(comm => {
                             let commentDiv = document.createElement('div');
-                            commentDiv.classList.add('commentCW');
 
                             for (let commentItem of comm) {
                                 let commentItemDiv = document.createElement('div')
