@@ -8,7 +8,8 @@
     margin: 0 0 25px 15px;
     border-left: 1px solid grey;
     padding-left: 10px;
-
+    background: darkgrey;
+    opacity: 0.8;
 }
 
 .commentCW h4 {
