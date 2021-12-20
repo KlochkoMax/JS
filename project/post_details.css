@@ -1,0 +1,35 @@
+.commentBlock  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 5%;
+    width: 90%;
+}
+
+.commentCard {
+    width: 22%;
+    margin: 0 15px 10px 0;
+    background: khaki;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.commentName {
+    margin-top: 5px;
+    border-top: solid 2px grey;
+    height: 80px;
+}
+
+.btn {
+    margin-left: 3%;
+}
+
+.ulBlock {
+    margin:  0 5%;
+    border: 2px solid #5e5e59;
+    padding-bottom: 10px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+

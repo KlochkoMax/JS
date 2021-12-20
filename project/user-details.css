@@ -1,0 +1,66 @@
+.main {
+    border: solid 2px grey;
+    border-radius: 5%;
+}
+
+li:nth-child(2){
+    display: none;
+}
+
+.li {
+    margin-left: 3.5%;
+    padding: 1px;
+
+}
+
+.postdiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 1% 5%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+
+b, h3 {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 90%;
+    margin: 0 5% 2%;
+    border-radius: 5%;
+}
+
+.postcard {
+    display: flex;
+    flex-wrap: wrap;
+    background: cornsilk;
+    border-radius: 5%;
+    width: 18%;
+    margin-bottom: 1%;
+    justify-content: space-around;
+}
+
+.postBtn {
+    width: 70%;
+    height: 20px;
+    border-radius: 15%;
+    margin: 5px 15% ;
+}
+
+.lK {
+    margin-left: 2%;
+}
+
+h2 {
+    margin-left: 2%;
+    text-decoration: underline;
+}
+
+
+
+
+
