@@ -1,6 +1,6 @@
 
     let userDetails = JSON.parse(localStorage.getItem('Users'));
-    // console.log(userDetails)
+    console.log(userDetails);
 
     let user_id = Object.values(userDetails[0])
     // console.log(user_id[0])
@@ -47,6 +47,7 @@
                 postDiv.classList.add('postdiv');
                 main.appendChild(postDiv);
                 localStorage.clear();
+                localStorage.setItem('Details', JSON.stringify(userDetails));
 
                 for (let post of posts) {
                     let postCard = document.createElement('div');
@@ -70,6 +71,15 @@
                 }
 
             })
+    }
+
+    let previousBtn = document.createElement('button');
+    previousBtn.classList.add('prevBtn');
+    previousBtn.innerText = 'Previous page'
+    main.appendChild(previousBtn);
+
+    previousBtn.onclick = function (){
+        location.href ='index.html'
     }
 
 

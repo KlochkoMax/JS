@@ -29,6 +29,11 @@
     showCommentsBtn.innerText = 'Show comments to this post'
     ulDiv.appendChild(showCommentsBtn);
 
+    let previousBtn = document.createElement('button');
+    previousBtn.classList.add('prevBtn');
+    previousBtn.innerText = 'Previous page'
+    ulDiv.appendChild(previousBtn);
+
     showCommentsBtn.onclick = function (){
         fetch(`https://jsonplaceholder.typicode.com/posts/${post[0]}/comments`)
             .then(comments => comments.json())
@@ -51,6 +56,13 @@
                 }
             })
     }
+
+    previousBtn.onclick = function (){
+                let userDetails = JSON.parse(localStorage.getItem('Details')) || [];
+                localStorage.setItem('Users', JSON.stringify(userDetails));
+                location.href = 'user-details.html';
+    }
+
 
 
 

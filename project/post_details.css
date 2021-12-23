@@ -21,6 +21,7 @@
 
 .btn {
     margin-left: 3%;
+
 }
 
 .ulBlock {
@@ -31,5 +32,9 @@
 
 h2 {
     text-decoration: underline;
+}
+
+.prevBtn {
+    margin-left: 2%;
 }
 
